@@ -1,3 +1,6 @@
+<head> 
+    <link rel = "stylesheet" type = "text/css" href = "styles.css"> 
+</head>
 <h1>Analyzing Player Performance in Europe's Top 5 Leagues: A Data-Driven Approach for the 2023/2024 Season</h1>
 
 <h2>Our Central Goal</h2>
@@ -40,19 +43,33 @@
             </li>
 
         </ul>
-<iframe src="fig1_diego.html" width="100%" height="600" style="border:none;"></iframe>
+<h1>Peak Performance Age Range</h1>
+    <iframe src="fig1_diego.html" width="100%" height="600" style="border:none;"></iframe>
 
-        <p>This visualization highlights the relationship between player age and goals per 90 minutes. It reveals that the majority 
-            of players fall within the age range of 20 to 30, which also corresponds to the period of peak performance for scoring 
-            goals. Players in this range exhibit higher variability in goals per 90 minutes, with a few outliers achieving exceptional
-            goal-scoring rates of over 4 or even 6 goals per 90 minutes. In contrast, younger players (under 20) and older players
-            (over 35) tend to have lower goal-scoring rates, clustering around 0-1 goals per 90 minutes. This suggests that players
-            in their mid-20s to early-30s are at their most productive stage, while performance tends to decline with age or is
-            limited by inexperience at younger ages. This analysis underscores the importance of age in influencing performance
-            but also suggests the presence of exceptional outliers who defy these general trends.
-        </p>
+            <p>This visualization highlights the relationship between player age and goals per 90 minutes. It reveals that the majority 
+                of players fall within the age range of 20 to 30, which also corresponds to the period of peak performance for scoring 
+                goals. Players in this range exhibit higher variability in goals per 90 minutes, with a few outliers achieving exceptional
+                goal-scoring rates of over 4 or even 6 goals per 90 minutes. In contrast, younger players (under 20) and older players
+                (over 35) tend to have lower goal-scoring rates, clustering around 0-1 goals per 90 minutes. This suggests that players
+                in their mid-20s to early-30s are at their most productive stage, while performance tends to decline with age or is
+                limited by inexperience at younger ages. This analysis underscores the importance of age in influencing performance
+                but also suggests the presence of exceptional outliers who defy these general trends.
+            </p>
+<h1>Correlation and Variance Between Age and Goals and Assists Recorded</h1>
+    <img src="g+a.jpg" />  
+    <img src="age_box.jpg" />
+            <p> 
+                These two box plots show the varaince and draw the relationship mentioned above about the optimal ages for player performance.
+                As depicted in the first box plot, the Spanish side La Liga have the highest Q3 and Median Age, with the most outliers as well. 
+                In contrast, the French Ligue 1 side have the youngest players. According to our logic above, players on the low side of the bell 
+                curve of both sides tend to have decreased performance. Players too young and too old, tend to preform at a lower level. Thus this leads
+                us to our second box plot, which depicts the combinded Goals and Assists grouped by league. In accordance, the middle three leagues, have
+                the highest medians, and outliers because they are also the middle three legaues in age. Meanwhile Ligue 1 and La Liga which are on the
+                lower sides of the spectrum lack in Goals and Assits, leading us to the same conclusion.
 
-<iframe src="GoalDistPos.html" width="100%" height="600" style="border:none;"></iframe>
+            </p>
+
+    <iframe src="GoalDistPos.html" width="100%" height="600" style="border:none;"></iframe>
 <iframe src="interactive_top50_def.html" width="100%" height="600" style="border:none;"></iframe>
 <iframe src="fig3_diego.html" width="100%" height="600" style="border:none;"></iframe>
         <p> 
@@ -63,4 +80,15 @@
             to 0.8 goals per 90 minutes. This analysis emphasizes the standout performance of players from smaller footballing nations, 
             such as Cyprus, who exhibit extraordinary efficiency in scoring, possibly reflecting the dominance of a few key players
             within these nations. It also highlights the diversity in scoring ability across a wide range of countries.
+        </p>
+
+<h1>Where the Best Offensive Players Come From</h1>
+<iframe src="map.html" width="100%" height="800" style="border:none;"></iframe>
+        <p>
+            Presented above is a world map, with the color of each country, decided by the sum of the players representing the country's
+            combinded Goals and Assists. The top four frontrunners are Spain, France, England, Germany, and Italy, in that order. Convenientally, 
+            those are the five countries that the top five leagues are in, suggesting that they have the highest playing field in the world. 
+            Some other noticable countries are Brazil and Argentina, both having fairly high contributers. On the other hand, countries like 
+            China, India, and the USA, have very low amounts of players playing in the top five leageus and contributing towards these numbers, which
+            means that a large population does not correlate to simply having a higher playing level of soccer.
         </p>
