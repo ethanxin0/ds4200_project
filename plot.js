@@ -1,4 +1,4 @@
-const fifa = d3.csv("team.csv", d3.autoType); // Load CSV and auto-detect data types
+const fifa = d3.csv("team.csv", d3.autoType);
 
 let width = 600;
 let height = 400;
@@ -19,11 +19,11 @@ let svg = d3.select("body")
 fifa.then(data => {
     // Define scales
     let yScale = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d.Gls)]) // Adjust domain based on data
+        .domain([0, d3.max(data, d => d.Gls)])
         .range([height - margin.bottom, margin.top]);
 
     let xScale = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d.PrgP)]) // Adjust domain based on data
+        .domain([0, d3.max(data, d => d.PrgP)])
         .range([margin.left, width - margin.right]);
 
     const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
