@@ -1,1 +1,30 @@
-
+h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #adebc0;
+    color: black;
+    padding: 1em 0;
+    text-align: center;
+}
+a{
+    margin-right: 20px;
+}
