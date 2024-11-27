@@ -62,8 +62,8 @@
                     </li>
 
                 </ul>
-        <h1>Peak Performance Age Range</h1>
-            <iframe src="fig1_diego.html" width="100%" height="600" style="border:none;"></iframe>
+        <h1>Examining Peak Player Performance Age Range</h1>
+            <iframe src="plots/fig1_diego.html" width="100%" height="600" style="border:none;"></iframe>
 
                     <p>This visualization highlights the relationship between player age and goals per 90 minutes. It reveals that the majority 
                         of players fall within the age range of 20 to 30, which also corresponds to the period of peak performance for scoring 
@@ -75,8 +75,14 @@
                         but also suggests the presence of exceptional outliers who defy these general trends.
                     </p>
         <h1>Correlation and Variance Between Age and Goals and Assists Recorded</h1>
-            <img src="g+a.jpg" />  
-            <img src="age_box.jpg" />
+            <div class="container">
+                <div class="plot">
+                    <img src="plots/age_box.jpg">
+                </div>
+                <div class="plot">
+                    <img src="plots/g+a.jpg">
+                </div>
+            </div>
                     <p> 
                         These two box plots show the varaince and draw the relationship mentioned above about the optimal ages for player performance.
                         As depicted in the first box plot, the Spanish side La Liga have the highest Q3 and Median Age, with the most outliers as well. 
@@ -88,10 +94,10 @@
 
                     </p>
         <h1>Goal Distribution by Position</h1>
-            <iframe src="GoalDistPos.html" width="100%" height="600" style="border:none;"></iframe>
+            <iframe src="plots/GoalDistPos.html" width="100%" height="600" style="border:none;"></iframe>
 
-        <iframe src="interactive_top50_def.html" width="100%" height="600" style="border:none;"></iframe>
-        <iframe src="fig3_diego.html" width="100%" height="600" style="border:none;"></iframe>
+        <iframe src="plots/interactive_top50_def.html" width="100%" height="600" style="border:none;"></iframe>
+        <iframe src="plots/fig3_diego.html" width="100%" height="600" style="border:none;"></iframe>
                 <p> 
                     This visualization showcases the top scorers in the top five leagues, grouped by their nations, based on average goals
                     per 90 minutes. Players from Cyprus (CYP) lead with the highest average, exceeding 1.6 goals per 90 minutes, significantly
@@ -103,7 +109,7 @@
                 </p>
 
         <h1>Where the Best Offensive Players Come From</h1>
-        <iframe src="map.html" width="100%" height="800" style="border:none;"></iframe>
+        <iframe src="plots/map.html" width="100%" height="800" style="border:none;"></iframe>
                 <p>
                     Presented above is a world map, with the color of each country, decided by the sum of the players representing the country's
                     combinded Goals and Assists. The top four frontrunners are Spain, France, England, Germany, and Italy, in that order. Convenientally, 
@@ -114,6 +120,6 @@
                 </p>
 
         <script src="https://d3js.org/d3.v7.min.js"></script>
-        <script src='plot.js'></script>
+        <script src='plots/plot.js'></script>
     </body>
 </html>
