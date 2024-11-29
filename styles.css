@@ -1,48 +1,34 @@
-h1{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
 
-}
-p {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5px;
-    padding: 5px;
-    font-size: 17px;
-}
-h2{
-    font-family: 'Roboto', sans-serif;
-}
-li{
-    font-family: Arial, Helvetica, sans-serif;
-}
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background-color: white;
-    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
 }
-header {
-    background-color: #adebc0;
-    color: black;
-    padding: 1em 0;
-    text-align: center;
+
+h1, h2 {
+    color: #0056b3;
 }
-a{
-    margin-right: 20px;
+
+p {
+    margin: 0 0 20px 0;
 }
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 20px;
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
-.plot {
-    flex: 1;
-    margin: 10px;
+
+li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
 }
-img {
+
+iframe, img {
+    display: block;
+    margin: 20px auto;
     max-width: 100%;
-    height: auto;
+    height: 800;
 }
