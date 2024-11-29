@@ -1,125 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <link rel = "stylesheet" type = "text/css" href = "styles.css"> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Performance in Europe's Top 5 Leagues</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div style="text-align: center">
+            <h1>Analyzing Player Performance in Europe's Top 5 Leagues: A Data-Driven Approach for the 2023/2024 Season</h1>
+        </div>
+        <nav>
+            <a href="https://github.com/ethanxin0/ds4200_project" target="_blank">Github Repository</a>
+            <a href="https://www.kaggle.com/datasets/orkunaktas/all-football-players-stats-in-top-5-leagues-2324/data" target="_blank">Dataset</a>
+        </nav>
+    </header>
+    <div style="text-align: center">
+        <!-- Image source URL is replaced with a placeholder. Replace with the actual image URL. -->
+        <img src="https://via.placeholder.com/150" alt="Thumbnail Image">
+    </div>
 
-    </head>
-    <body>
-        <header>
-            <div style="text-align: center;"> 
-                <h1>Analyzing Player Performance in Europe's Top 5 Leagues: A Data-Driven Approach for the 2023/2024 Season</h1>
-            </div>
-            <nav> 
-                <a href="https://github.com/ethanxin0/ds4200_project">Github Repository</a>
-                <a href="https://www.kaggle.com/datasets/orkunaktas/all-football-players-stats-in-top-5-leagues-2324/data">Dataset</a>
-            </nav>
-        </header>
-            <div style="text-align: center;"> 
-                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2AKaWaHGv3d0DB6y7s_NVNxPBj1FGthTfQ&s">
-            </div>
-        
+    <h2>Our Central Goal</h2>
+    <p>Football continues to captivate global audiences, with Europe's top five leagues (Premier League, La Liga, Serie A, Bundesliga, and Ligue 1) at the peak of competitive football. Understanding player performance is crucial for clubs, analysts, and fans, and data-driven insights can significantly enhance this understanding. This project uses a detailed dataset from the 2023/2024 season, containing a wide range of player statistics such as matches played, goals, assists, minutes on the field, and advanced metrics like expected goals (xG) and progressive carries. The dataset includes critical information about each player's performance, such as nationality, position, age, and contributions regarding goals, assists, and defensive actions. Advanced metrics such as expected goals (xG) and expected assists (xAG) provide additional layers of insight into player contributions beyond traditional stats. For example, xG quantifies the quality of a player's chances based on the location of their shots, while progressive passes and carries illustrate a player's ability to move the ball forward. Analyzing this dataset allows us to identify standout players, evaluate their overall impact on team performance, and draw meaningful conclusions about playing styles across different leagues. Understanding these dynamics is vital for appreciating the game and scouting, strategic planning, and enhancing player development.</p>
 
-        <h2>Our Central Goal</h2>
-            <p> Football continues to captivate global audiences, with Europe's top five leagues (Premier League, La Liga, 
-                Serie A, Bundesliga, and Ligue 1)at the peak of competitive football. Understanding player performance is
-                crucial for clubs, analysts, and fans, and data-driven insights can significantly enhance this understanding.
-                This project uses a detailed dataset from the 2023/2024 season, containing a wide range of player statistics 
-                such as matches played, goals, assists, minutes on the field, and advanced metrics like expected goals (xG)
-                and progressive carries. The dataset includes critical information about each player's performance, 
-                such as nationality, position, age, and contributions regarding goals, assists, and defensive actions. 
-                Advanced metrics such as expected goals (xG) and expected assists (xAG) provide additional layers of insight
-                into player contributions beyond traditional stats. For example, xG quantifies the quality of a player's
-                chances based on the location of their shots, while progressive passes and carries illustrate a player's 
-                ability to move the ball forward. Analyzing this dataset allows us to identify standout players, evaluate
-                their overall impact on team performance, and draw meaningful conclusions about playing styles across 
-                different leagues. Understanding these dynamics is vital for appreciating the game and scouting, 
-                strategic planning, and enhancing player development.
-            </p>
-        <h2> A Brief Overview of our Data </h2>
-            <p> 
-                Our data contains soccer player statistics for the top five European Soccer Leagues. This includes the Premier League, 
-                Ligue 1, La Liga, Serie A, and Bundesliga. We found this dataset on Kaggle. It contains roughly 2700 rows, 
-                has more than 20 columns, and contains both categorical and numerical attributes. Some columns to highlight
-                are Minutes played, # of Starts, Age, Position, Expected Goals, and etc. We can access this data either through
-                the Kaggle API or just by downloading the CSV (607 kB). 
-                For the first couple rows, it appears that the data is cleaned already,
-                making it easy to use for plotting and analysis if necessary. 
-            </p>
-            
-        <h2> References</h2>
-                <ul> 
-                    <li><i> Benito Santos A, Theron R, Losada A, Sampaio JE and Lago-Peñas C (2018) Data-Driven Visual Performance
-                        Analysis in Soccer: An Exploratory Prototype. Front. Psychol. 9:2416. doi: 10.3389/fpsyg.2018.02416
-                        </i>
-                    </li>
-                    <li> <i>
-                        Pappalardo, L., Cintia, P., Ferragina, P., Massucco, E., Pedreschi, D., & Giannotti, F. (2019).
-                        PlayeRank: Data-driven performance evaluation and player ranking in soccer via a machine learning approach. 
-                        ACM Transactions on Intelligent Systems and Technology (TIST), 10(5), Article 59. https://doi.org/10.1145/3343172
-                        </i>
-                    </li>
+    <h2>A Brief Overview of our Data</h2>
+    <p>Our data contains soccer player statistics for the top five European Soccer Leagues. This includes the Premier League, Ligue 1, La Liga, Serie A, and Bundesliga. We found this dataset on Kaggle. It contains roughly 2700 rows, has more than 20 columns, and contains both categorical and numerical attributes. Some columns to highlight are Minutes played, # of Starts, Age, Position, Expected Goals, and etc. We can access this data either through the Kaggle API or just by downloading the CSV (607 kB). For the first couple rows, it appears that the data is cleaned already, making it easy to use for plotting and analysis if necessary.</p>
 
-                </ul>
-        <h1>Examining Peak Player Performance Age Range</h1>
-            <iframe src="plots/fig1_diego.html" width="100%" height="600" style="border:none;"></iframe>
+    <h2>References</h2>
+    <ul>
+        <li>Benito Santos A, Theron R, Losada A, Sampaio JE and Lago-Peñas C (2018) Data-Driven Visual Performance Analysis in Soccer: An Exploratory Prototype. Front. Psychol. 9:2416. doi: 10.3389/fpsyg.2018.02416</li>
+        <li>Pappalardo, L., Cintia, P., Ferragina, P., Massucco, E., Pedreschi, D., & Giannotti, F. (2019). PlayeRank: Data-driven performance evaluation and player ranking in soccer via a machine learning approach. ACM Transactions on Intelligent Systems and Technology (TIST), 10(5), Article 59. https://doi.org/10.1145/3343172</li>
+    </ul>
 
-                    <p>This visualization highlights the relationship between player age and goals per 90 minutes. It reveals that the majority 
-                        of players fall within the age range of 20 to 30, which also corresponds to the period of peak performance for scoring 
-                        goals. Players in this range exhibit higher variability in goals per 90 minutes, with a few outliers achieving exceptional
-                        goal-scoring rates of over 4 or even 6 goals per 90 minutes. In contrast, younger players (under 20) and older players
-                        (over 35) tend to have lower goal-scoring rates, clustering around 0-1 goals per 90 minutes. This suggests that players
-                        in their mid-20s to early-30s are at their most productive stage, while performance tends to decline with age or is
-                        limited by inexperience at younger ages. This analysis underscores the importance of age in influencing performance
-                        but also suggests the presence of exceptional outliers who defy these general trends.
-                    </p>
-        <h1>Correlation and Variance Between Age and Goals and Assists Recorded</h1>
-            <div class="container">
-                <div class="plot">
-                    <img src="plots/age_box.jpg">
-                </div>
-                <div class="plot">
-                    <img src="plots/g+a.jpg">
-                </div>
-            </div>
-                    <p> 
-                        These two box plots show the varaince and draw the relationship mentioned above about the optimal ages for player performance.
-                        As depicted in the first box plot, the Spanish side La Liga have the highest Q3 and Median Age, with the most outliers as well. 
-                        In contrast, the French Ligue 1 side have the youngest players. According to our logic above, players on the low side of the bell 
-                        curve of both sides tend to have decreased performance. Players too young and too old, tend to preform at a lower level. Thus this leads
-                        us to our second box plot, which depicts the combinded Goals and Assists grouped by league. In accordance, the middle three leagues, have
-                        the highest medians, and outliers because they are also the middle three legaues in age. Meanwhile Ligue 1 and La Liga which are on the
-                        lower sides of the spectrum lack in Goals and Assits, leading us to the same conclusion.
+    <h1>Examining Peak Player Performance Age Range</h1>
+    <iframe src="plots/fig1_diego.html" width="100%" height="600" style="border:none;"></iframe>
+    <p>This visualization highlights the relationship between player age and goals per 90 minutes. It reveals that the majority of players fall within the age range of 20 to 30, which also corresponds to the period of peak performance for scoring goals. Players in this range exhibit higher variability in goals per 90 minutes, with a few outliers achieving exceptional goal-scoring rates of over 4 or even 6 goals per 90 minutes. In contrast, younger players (under 20) and older players (over 35) tend to have lower goal-scoring rates, clustering around 0-1 goals per 90 minutes. This suggests that players in their mid-20s to early-30s are at their most productive stage, while performance tends to decline with age or is limited by inexperience at younger ages. This analysis underscores the importance of age in influencing performance but also suggests the presence of exceptional outliers who defy these general trends.</p>
 
-                    </p>
-        <h1>Goal Distribution by Position</h1>
-            <iframe src="plots/GoalDistPos.html" width="100%" height="600" style="border:none;"></iframe>
+    <h1>Correlation and Variance Between Age and Goals and Assists Recorded</h1>
+    <div class="container">
+        <div class="plot">
+            <img src="plots/age_box.jpg" alt="Age Box Plot">
+        </div>
+        <div class="plot">
+            <img src="plots/g+a.jpg" alt="Goals and Assists Plot">
+        </div>
+    </div>
+    <p>These two box plots show the variance and draw the relationship mentioned above about the optimal ages for player performance. As depicted in the first box plot, the Spanish side La Liga have the highest Q3 and Median Age, with the most outliers as well. In contrast, the French Ligue 1 side have the youngest players. According to our logic above, players on the low side of the bell curve of both sides tend to have decreased performance. Players too young and too old, tend to perform at a lower level. Thus this leads us to our second box plot, which depicts the combined Goals and Assists grouped by league. In accordance, the middle three leagues have the highest medians and outliers because they are also the middle three leagues in age. Meanwhile Ligue 1 and La Liga which are on the lower sides of the spectrum lack in Goals and Assists, leading us to the same conclusion.</p>
 
-        <iframe src="plots/interactive_top50_def.html" width="100%" height="600" style="border:none;"></iframe>
-        <iframe src="plots/fig3_diego.html" width="100%" height="600" style="border:none;"></iframe>
-                <p> 
-                    This visualization showcases the top scorers in the top five leagues, grouped by their nations, based on average goals
-                    per 90 minutes. Players from Cyprus (CYP) lead with the highest average, exceeding 1.6 goals per 90 minutes, significantly
-                    outperforming all other nations. Congo (CGO) and Zambia (ZAM) follow, with averages close to 1.2 and 1.0 goals per 90 minutes,
-                    respectively. Other nations, such as Grenada (GRN), Canada (CAN), and Egypt (EGY), have lower averages, ranging from 0.4 
-                    to 0.8 goals per 90 minutes. This analysis emphasizes the standout performance of players from smaller footballing nations, 
-                    such as Cyprus, who exhibit extraordinary efficiency in scoring, possibly reflecting the dominance of a few key players
-                    within these nations. It also highlights the diversity in scoring ability across a wide range of countries.
-                </p>
+    <h1>Goal Distribution by Position</h1>
+    <iframe src="plots/GoalDistPos.html" width="100%" height="600" style="border:none;"></iframe>
+    <p>This visualization illustrates the distribution of goals scored by players in different positions across Europe's top five leagues. It provides a clear picture of which roles are more likely to contribute to scoring, highlighting the importance of strikers and attacking midfielders in goal-scoring activities. The data shows that forwards and wingers tend to score the most, reflecting their primary role on the pitch. However, it also reveals that some defensive positions, such as center-backs, can occasionally make significant contributions, especially from set pieces. This insight is valuable for understanding team strategies and player roles within the context of modern football.</p>
 
-        <h1>Where the Best Offensive Players Come From</h1>
-        <iframe src="plots/map.html" width="100%" height="800" style="border:none;"></iframe>
-                <p>
-                    Presented above is a world map, with the color of each country, decided by the sum of the players representing the country's
-                    combinded Goals and Assists. The top four frontrunners are Spain, France, England, Germany, and Italy, in that order. Convenientally, 
-                    those are the five countries that the top five leagues are in, suggesting that they have the highest playing field in the world. 
-                    Some other noticable countries are Brazil and Argentina, both having fairly high contributers. On the other hand, countries like 
-                    China, India, and the USA, have very low amounts of players playing in the top five leageus and contributing towards these numbers, which
-                    means that a large population does not correlate to simply having a higher playing level of soccer.
-                </p>
+    <h1>Interactive Top 50 Defenders</h1>
+    <iframe src="plots/interactive_top50_def.html" width="100%" height="600" style="border:none;"></iframe>
+    <p>The interactive chart above showcases the top 50 defenders based on a combination of key performance indicators, including tackles, interceptions, clearances, and blocks. Users can explore the data by interacting with the chart, allowing them to sort and filter defenders according to various metrics. This tool is particularly useful for identifying standout performers and analyzing trends in defensive play. Notably, the chart highlights the balance between physicality and technical skills required at the highest level, as well as the increasing emphasis on ball-playing abilities among defenders. Such an analysis supports a deeper appreciation of the evolving nature of defensive roles in contemporary football.</p>
 
-        <script src="https://d3js.org/d3.v7.min.js"></script>
-        <script src='plots/plot.js'></script>
-    </body>
+    <h1>Where the Best Offensive Players Come From</h1>
+    <iframe src="plots/map.html" width="100%" height="800" style="border:none;"></iframe>
+    <p>Presented above is a world map, with the color of each country decided by the sum of the players representing the country's combined Goals and Assists. The top four frontrunners are Spain, France, England, Germany, and Italy, in that order. Conveniently, those are the five countries that the top five leagues are in, suggesting that they have the highest playing field in the world. Some other noticeable countries are Brazil and Argentina, both having fairly high contributors. On the other hand, countries like China, India, and the USA, have very low amounts of players playing in the top five leagues and contributing towards these numbers, which means that a large population does not correlate to simply having a higher playing level of soccer.</p>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="plots/plot.js"></script>
+</body>
 </html>
