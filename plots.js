@@ -1,4 +1,4 @@
-const fifa = d3.csv("team.csv", d3.autoType);
+const fifa = d3.csv("data_csvs/team.csv", d3.autoType);
 
 let width = 600;
 let height = 400;

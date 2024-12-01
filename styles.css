@@ -6,7 +6,13 @@ body {
     padding: 0;
     color: #333;
 }
-
+nav {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0; 
+}
 h1, h2 {
     color: #0056b3;
 }
@@ -31,4 +37,18 @@ iframe, img {
     margin: 20px auto;
     max-width: 100%;
     height: 800;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+}
+.plot {
+    flex: 1;
+    margin: 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
