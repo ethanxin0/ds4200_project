@@ -17,7 +17,7 @@ let svg = d3.select("body")
     .style("background", "lightyellow");
 
 fifa.then(data => {
-    // Define scales
+    // define scales
     let yScale = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.Gls)])
         .range([height - margin.bottom, margin.top]);
@@ -28,7 +28,7 @@ fifa.then(data => {
 
     const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
-    // Add axes
+    // add axes
     svg.append("g")
         .attr("transform", `translate(0,${height - margin.bottom})`)
         .call(d3.axisBottom(xScale));
@@ -37,7 +37,7 @@ fifa.then(data => {
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft(yScale));
 
-    // Add axis labels
+    // add axis labels
     svg.append("text")
         .attr("x", width / 2)
         .attr("y", height - margin.bottom + 80 / 2)
@@ -51,7 +51,7 @@ fifa.then(data => {
         .attr("text-anchor", "middle")
         .text("Goals (Gls)");
 
-    // Plot points
+    // plot points
     svg.selectAll("circle")
         .data(data)
         .enter()
@@ -59,23 +59,23 @@ fifa.then(data => {
         .attr("cx", d => xScale(d.PrgP))
         .attr("cy", d => yScale(d.Gls))
         .attr("r", 5)
-        .attr("fill", d => colorScale(d.Comp)); // Color by Squad
+        .attr("fill", d => colorScale(d.Comp));
     const legend = svg.selectAll(".legend")
         .data(colorScale.domain())
         .enter().append("g")
         .attr("class", "legend")
-        .attr("transform", (d, i) => "translate(" + margin.left + "," + (margin.top + i * 20) + ")"); // Adjust position
+        .attr("transform", (d, i) => "translate(" + margin.left + "," + (margin.top + i * 20) + ")"); 
     
     legend.append("circle")
-        .attr("cx", 15) // Position circle on the left
+        .attr("cx", 15) 
         .attr("cy", 11) 
         .attr("r", 6)
         .style("fill", d => colorScale(d)); 
     
     legend.append("text")
-        .attr("x", 30) // Position text to the right of the circle
+        .attr("x", 30)
         .attr("y", 15)
         .text(d => d)
-        .style("text-anchor", "start"); // Ensure text aligns properly
+        .style("text-anchor", "start");
     
 });

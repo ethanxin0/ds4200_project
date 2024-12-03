@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 2px;
-    padding: 2px;
+    padding: 10px;
     color: #333;
 }
 nav {
@@ -20,11 +20,12 @@ h1 {
 h2 {
     text-align: center;
     color: #0056b3;
+    margin: 20px;
 }
 header {
     background: #69caab;
-    padding: 0px;
-    margin: 0px;
+    padding: 20px;
+
 }
 p {
     margin: 0 0 20px 0;
