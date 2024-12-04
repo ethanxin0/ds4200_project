@@ -1,0 +1,25 @@
+- First Plot, Examining Peak player performance age
+    - 
+
+- Second Plot, Potential Correlations Between Age and Goals + Assists Recorded
+    - We wanted to see quantifiying numbers between ages and goals scored in the top five leagues,
+    thus we decided to create two boxplots, one for age, and one for Goals + Assits recorded. The marks 
+    in these box plots are the boxes, median line, whiskers, and some outlier points. Some channels we had
+    were the positinioning of the boxes, each box to represent different leagues and the color of the boxes.
+
+-Third Plot, Goal Distribution by Position
+    -
+
+- Fourth Plot, Top 50 Goals + Assists by Defenders
+    -
+
+- Fifth Plot, Where the Best Offensive Players Come From
+    - In this plot, we wanted to examine where the best offensive players, quantified by Goals + Assits, originate
+    from. By using geopandas, we created a world map, colored by how many goals + assits players from their respective
+    countries producded in the top five leagues. Leading the way are France and Spain, not a huge suprise. Some Marks we used 
+    in this graph are the countries themselves, and the color gradient. Some channels we used was the interactive tooltip, the
+    boundareis of the countries and the color as well.
+ 
+- Sixth Plot, Progressive Passes Forward vs Goals Scored
+    - 
+
