@@ -1,5 +1,10 @@
 - First Plot, Examining Peak player performance age
-    - 
+    -  This visualization highlights the relationship between player age and goals per 90 minutes. It reveals that the majority 
+    of players fall within the age range of 20 to 30, which also corresponds to the period of peak performance for scoring goals.
+    Players in this range exhibit higher variability in goals per 90 minutes, with a few outliers achieving exceptional goal-scoring 
+    rates of over 4 or even 6 goals per 90 minutes. In contrast, younger players (under 20) and older players (over 35) tend to have
+     lower goal-scoring rates, clustering around 0-1 goals per 90 minutes. The marks in this graph are the scatter points. The channels
+     are the x and y position of the marks, the hue/color of the points.
 
 - Second Plot, Potential Correlations Between Age and Goals + Assists Recorded
     - We wanted to see quantifiying numbers between ages and goals scored in the top five leagues,
@@ -8,10 +13,27 @@
     were the positinioning of the boxes, each box to represent different leagues and the color of the boxes.
 
 -Third Plot, Goal Distribution by Position
-    -
+    - This visualization illustrates the distribution of goals scored by players in different positions across Europe's
+    top five leagues. It provides a clear picture of which roles are more likely to contribute to scoring, highlighting
+    the importance of strikers and attacking midfielders in goal-scoring activities. The data shows that forwards and
+    wingers tend to score the most, reflecting their primary role on the pitch. However, it also reveals that some defensive 
+    positions, such as center-backs, can occasionally make significant contributions, especially from set pieces. This insight
+    is valuable for understanding team strategies and player roles within the context of modern football. The marks used 
+    were bars within a bar chart. The channels are the x and y axis, the x being player names a categorical variable and 
+    they being a quantitative variable which is goals scored. The remaining channels are the title text describing what the
+    visual shows and the interactive element where you can filter by overall position. 
+
 
 - Fourth Plot, Top 50 Goals + Assists by Defenders
-    -
+    - The interactive chart above showcases the top 50 defenders based on a combination of key performance indicators, including tackles,
+    interceptions, clearances, and blocks. Users can explore the data by interacting with the chart, allowing them to sort and filter
+    defenders according to various metrics. This tool is particularly useful for identifying standout performers and analyzing trends
+    in defensive play. Notably, the chart highlights the balance between physicality and technical skills required at the highest level,
+    as well as the increasing emphasis on ball-playing abilities among defenders. Such an analysis supports a deeper appreciation of
+    the evolving nature of defensive roles in contemporary football. The marks used were bars within a bar chart. The channels are 
+    the x and y axis, the x being player names a categorical variable and the y being a quantitative variable which is goals scored. 
+    The remaining channels are the title text describing what the visual shows and the interactive element where you can filter by
+    defensive position.
 
 - Fifth Plot, Where the Best Offensive Players Come From
     - In this plot, we wanted to examine where the best offensive players, quantified by Goals + Assits, originate
@@ -21,5 +43,10 @@
     boundareis of the countries and the color as well.
  
 - Sixth Plot, Progressive Passes Forward vs Goals Scored
-    - 
+    - This D3 Visualization demonstrates the relationship plotted on a scatter plot between Progressive Passes Forward and Goals grouped
+     by team and colored by league. Progressive passes are defined as passes that move the ball upfield and into attacking positions. 
+     In the graph, a clear positive linear relationship is presented, meaning that teams that play more forward passes tend to score more goals. 
+     In the new era of soccer, a style known as playing out the back has become more prevalant, in which players will often play back to the
+     goalkeeper or centerbacks and then play the ball foward. The marks in this graph are the scatter plot points. The channels are the position,
+     the color of the points, which represents the respective league, and the positinioning of the points.
 
