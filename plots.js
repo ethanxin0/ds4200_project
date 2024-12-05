@@ -27,7 +27,6 @@ fifa.then(data => {
         .range([margin.left, width - margin.right]);
 
     const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
-
     // add axes
     svg.append("g")
         .attr("transform", `translate(0,${height - margin.bottom})`)
