@@ -38,7 +38,7 @@ Website Link: https://ethanxin0.github.io/ds4200_project/
     The remaining channels are the title text describing what the visual shows and the interactive element where you can filter by
     defensive position.
 
-- Fifth Plot, Where the Best Offensive Players Come From
+- Fifth Plot, Countries That are Best Represented in Goals + Assists in the Top 5 Leagues
     - In this plot, we wanted to examine where the best offensive players, quantified by Goals + Assits, originate
     from. By using geopandas, we created a world map, colored by how many goals + assits players from their respective
     countries producded in the top five leagues. Leading the way are France and Spain, not a huge suprise. Some Marks we used 
