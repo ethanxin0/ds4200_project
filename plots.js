@@ -85,7 +85,7 @@ fifa.then(data => {
             .attr("fill", colorScale(leagueName));
     });
     const img = document.createElement('img');
-    img.src = 'image.jpg';
+    img.src = 'subd3.jpg';
     img.alt = 'Description of the image';
 
     // Target the container
