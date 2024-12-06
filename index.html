@@ -49,20 +49,21 @@
     <p>These two box plots show the variance and draw the relationship mentioned above about the optimal ages for player performance. As depicted in the first box plot, the Spanish side La Liga have the highest Q3 and Median Age, with the most outliers as well. In contrast, the French Ligue 1 side have the youngest players. According to our logic above, players on the low side of the bell curve of both sides tend to have decreased performance. Players too young and too old, tend to perform at a lower level. Thus this leads us to our second box plot, which depicts the combined Goals and Assists grouped by league. In accordance, the middle three leagues have the highest medians and outliers because they are also the middle three leagues in age. Meanwhile Ligue 1 and La Liga which are on the lower sides of the spectrum lack in Goals and Assists, leading us to the same conclusion.</p>
 
     <h1>Goal Distribution by Position</h1>
-    <iframe src="plots/GoalDistPos.html" width="100%" height="600" style="border:none;"></iframe>
+    <iframe src="GoalDistPosTop10.html" width="100%" height="600" style="border:none;"></iframe>
     <p>This visualization illustrates the distribution of goals scored by players in different positions across Europe's top five leagues. It provides a clear picture of which roles are more likely to contribute to scoring, highlighting the importance of strikers and attacking midfielders in goal-scoring activities. The data shows that forwards and wingers tend to score the most, reflecting their primary role on the pitch. However, it also reveals that some defensive positions, such as center-backs, can occasionally make significant contributions, especially from set pieces. This insight is valuable for understanding team strategies and player roles within the context of modern football.</p>
 
-    <h1>Top 50 Goals + Assists by Defenders</h1>
-    <iframe src="plots/interactive_top50_def.html" width="100%" height="600" style="border:none;"></iframe>
+    <h1>Top 15 Goals + Assists by Defenders</h1>
+    <iframe src="Top15GoalsPer90Radio.html" width="100%" height="600" style="border:none;"></iframe>
     <p>The interactive chart above showcases the top 50 defenders based on a combination of key performance indicators, including tackles, interceptions, clearances, and blocks. Users can explore the data by interacting with the chart, allowing them to sort and filter defenders according to various metrics. This tool is particularly useful for identifying standout performers and analyzing trends in defensive play. Notably, the chart highlights the balance between physicality and technical skills required at the highest level, as well as the increasing emphasis on ball-playing abilities among defenders. Such an analysis supports a deeper appreciation of the evolving nature of defensive roles in contemporary football.</p>
 
     <h1>Countries That are Best Represented in Goals + Assists in the Top 5 Leagues</h1>
     <iframe src="plots/map.html" width="100%" height="800" style="border:none;"></iframe>
     <p>Presented above is a world map, with the color of each country decided by the sum of the players representing the country's combined Goals and Assists. The top four frontrunners are Spain, France, England, Germany, and Italy, in that order. Conveniently, those are the five countries that the top five leagues are in, suggesting that they have the highest playing field in the world. Some other noticeable countries are Brazil and Argentina, both having fairly high contributors. On the other hand, countries like China, India, and the USA, have very low amounts of players playing in the top five leagues and contributing towards these numbers, which means that a large population does not correlate to simply having a higher playing level of soccer.</p>
     <h1>Progressive Passes Forward vs Goals Scored</h1>
-
-    <img src = "subd3.jpg"> 
-    </div>
+    <div id="target-container">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="plots.js" defer></script>
+    </div> 
        
     <div> 
         <p>This D3 Visualization demonstrates the relationship plotted on a scatter plot between Progressive Passes Forward and Goals grouped by team and colored by league. Progressive passes are defined as passes that move the ball upfield and into attacking positions. The idea of an increase in progressive passes also relies on the fact that defenders are heavily involved in attacking play, which is a style known as playing out the back which has gained a lot of popularity in recent years. This is a direct effect of defenders being able to score more and get into atacking positions. Progressive passes often come from defenders sending the ball into the final attacking third, leading to more goals. In the graph, a clear positive linear relationship is presented, meaning that teams that play more forward passes tend to score more goals. The data doesn't show much skewness, however, there are four premier league teams on the right skew of the graph, meaning that premeier league tend to use their defenders more in the build up play, which is actually true. 4 big clubs in the Premier League, Manchester City, Arsenal, Liverpool, and Manchester United all utilize this style of playing out the back, being very aggressive with their defenders up the pitch.</p>

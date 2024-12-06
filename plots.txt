@@ -1,3 +1,6 @@
+Website Link: https://ethanxin0.github.io/ds4200_project/
+
+
 - First Plot, Examining Peak player performance age
     -  This visualization highlights the relationship between player age and goals per 90 minutes. It reveals that the majority 
     of players fall within the age range of 20 to 30, which also corresponds to the period of peak performance for scoring goals.
@@ -25,7 +28,7 @@
 
 
 - Fourth Plot, Top 50 Goals + Assists by Defenders
-    - The interactive chart above showcases the top 50 defenders based on a combination of key performance indicators, including tackles,
+    - The interactive chart above showcases the top 15 defenders based on a combination of key performance indicators, including tackles,
     interceptions, clearances, and blocks. Users can explore the data by interacting with the chart, allowing them to sort and filter
     defenders according to various metrics. This tool is particularly useful for identifying standout performers and analyzing trends
     in defensive play. Notably, the chart highlights the balance between physicality and technical skills required at the highest level,
@@ -44,7 +47,7 @@
  
 - Sixth Plot, Progressive Passes Forward vs Goals Scored
     - This D3 Visualization demonstrates the relationship plotted on a scatter plot between Progressive Passes Forward and Goals grouped
-     by team and colored by league. Progressive passes are defined as passes that move the ball upfield and into attacking positions. 
+     by team and plotted on each subplot by league. Progressive passes are defined as passes that move the ball upfield and into attacking positions. 
      In the graph, a clear positive linear relationship is presented, meaning that teams that play more forward passes tend to score more goals. 
      In the new era of soccer, a style known as playing out the back has become more prevalant, in which players will often play back to the
      goalkeeper or centerbacks and then play the ball foward. The marks in this graph are the scatter plot points. The channels are the position,

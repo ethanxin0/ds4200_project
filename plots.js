@@ -1,7 +1,7 @@
 const fifa = d3.csv("data_csvs/team.csv", d3.autoType);
 
 // Define cavnas and margins
-let width = 500;
+let width = 400;
 let height = 350;
 
 let margin = {
@@ -19,7 +19,7 @@ fifa.then(data => {
         .range(d3.schemeCategory10);
 
     // create container for subplots
-    const container = d3.select("body")
+    const container = d3.select("#target-container")
         .append("div")
         .style("display", "grid")
         .style("grid-template-columns", "repeat(3, 1fr)")
@@ -84,13 +84,5 @@ fifa.then(data => {
             .attr("r", 5)
             .attr("fill", colorScale(leagueName));
     });
-    const img = document.createElement('img');
-    img.src = 'subd3.jpg';
-    img.alt = 'Description of the image';
 
-    // Target the container
-    const targetContainer = document.getElementById('target-container');
-
-    // Append the image to the target container
-    targetContainer.appendChild(img)
 });
