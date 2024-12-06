@@ -9,7 +9,7 @@ Website Link: https://ethanxin0.github.io/ds4200_project/
      lower goal-scoring rates, clustering around 0-1 goals per 90 minutes. The marks in this graph are the scatter points. The channels
      are the x and y position of the marks, the hue/color of the points.
 
-- Second Plot, Potential Correlations Between Age and Goals + Assists Recorded
+- Second Plot, Box Plots Between Age and Goals + Assists Recorded
     - We wanted to see quantifiying numbers between ages and goals scored in the top five leagues,
     thus we decided to create two boxplots, one for age, and one for Goals + Assits recorded. The marks 
     in these box plots are the boxes, median line, whiskers, and some outlier points. Some channels we had
@@ -27,7 +27,7 @@ Website Link: https://ethanxin0.github.io/ds4200_project/
     visual shows and the interactive element where you can filter by overall position. 
 
 
-- Fourth Plot, Top 50 Goals + Assists by Defenders
+- Fourth Plot, Top 15 Goals + Assists by Defenders
     - The interactive chart above showcases the top 15 defenders based on a combination of key performance indicators, including tackles,
     interceptions, clearances, and blocks. Users can explore the data by interacting with the chart, allowing them to sort and filter
     defenders according to various metrics. This tool is particularly useful for identifying standout performers and analyzing trends
