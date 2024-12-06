@@ -28,13 +28,13 @@
     <p>Our data contains soccer player statistics for the top five European Soccer Leagues. This includes the Premier League, Ligue 1, La Liga, Serie A, and Bundesliga. We found this dataset on Kaggle. It contains roughly 2700 rows, has more than 20 columns, and contains both categorical and numerical attributes. Some columns to highlight are Minutes played, # of Starts, Age, Position, Expected Goals, and etc. We can access this data either through the Kaggle API or just by downloading the CSV (607 kB). For the first couple rows, it appears that the data is cleaned already, making it easy to use for plotting and analysis if necessary.</p>
 
     <h2>References</h2>
-    <ul>
         <li>Benito Santos A, Theron R, Losada A, Sampaio JE and Lago-Peñas C (2018) Data-Driven Visual Performance Analysis in Soccer: An Exploratory Prototype. Front. Psychol. 9:2416. doi: 10.3389/fpsyg.2018.02416</li>
         <li>Pappalardo, L., Cintia, P., Ferragina, P., Massucco, E., Pedreschi, D., & Giannotti, F. (2019). PlayeRank: Data-driven performance evaluation and player ranking in soccer via a machine learning approach. ACM Transactions on Intelligent Systems and Technology (TIST), 10(5), Article 59. https://doi.org/10.1145/3343172</li>
     </ul>
 
     <h1>Examining Peak Player Performance Age Range</h1>
     <iframe src="plots/fig1_diego.html" width="100%" height="600" style="border:none;"></iframe>
+    <h4> ** Hover over scatter plot point to view specific Player Info ** </h4>
     <p>This visualization highlights the relationship between player age and goals per 90 minutes. It reveals that the majority of players fall within the age range of 20 to 30, which also corresponds to the period of peak performance for scoring goals. Players in this range exhibit higher variability in goals per 90 minutes, with a few outliers achieving exceptional goal-scoring rates of over 4 or even 6 goals per 90 minutes. In contrast, younger players (under 20) and older players (over 35) tend to have lower goal-scoring rates, clustering around 0-1 goals per 90 minutes. This suggests that players in their mid-20s to early-30s are at their most productive stage, while performance tends to decline with age or is limited by inexperience at younger ages. This analysis underscores the importance of age in influencing performance but also suggests the presence of exceptional outliers who defy these general trends.</p>
 
     <h1>Box Plots Between Age and Goals + Assists Recorded</h1>
@@ -50,14 +50,17 @@
 
     <h1>Goal Distribution by Position</h1>
     <iframe src="GoalDistPosTop10.html" width="100%" height="600" style="border:none;"></iframe>
+    <h4> ** Use "Position" Select Box to filter data by Position ** </h4>
     <p>This visualization illustrates the distribution of goals scored by players in different positions across Europe's top five leagues. It provides a clear picture of which roles are more likely to contribute to scoring, highlighting the importance of strikers and attacking midfielders in goal-scoring activities. The data shows that forwards and wingers tend to score the most, reflecting their primary role on the pitch. However, it also reveals that some defensive positions, such as center-backs, can occasionally make significant contributions, especially from set pieces. This insight is valuable for understanding team strategies and player roles within the context of modern football.</p>
 
     <h1>Top 15 Goals + Assists by Defenders</h1>
     <iframe src="Top15GoalsPer90Radio-1.html" width="100%" height="600" style="border:none;"></iframe>
+    <h4> ** Use "Position" Radio Buttons to filter data by Position ** </h4>
     <p>The interactive chart above showcases the top 50 defenders based on a combination of key performance indicators, including tackles, interceptions, clearances, and blocks. Users can explore the data by interacting with the chart, allowing them to sort and filter defenders according to various metrics. This tool is particularly useful for identifying standout performers and analyzing trends in defensive play. Notably, the chart highlights the balance between physicality and technical skills required at the highest level, as well as the increasing emphasis on ball-playing abilities among defenders. Such an analysis supports a deeper appreciation of the evolving nature of defensive roles in contemporary football.</p>
 
     <h1>Countries That are Best Represented in Goals + Assists in the Top 5 Leagues</h1>
     <iframe src="plots/map.html" width="100%" height="800" style="border:none;"></iframe>
+    <h4> ** Interact with map by hovering over a country to access Goals + Assists data ** </h4>
     <p>Presented above is a world map, with the color of each country decided by the sum of the players representing the country's combined Goals and Assists. The top four frontrunners are Spain, France, England, Germany, and Italy, in that order. Conveniently, those are the five countries that the top five leagues are in, suggesting that they have the highest playing field in the world. Some other noticeable countries are Brazil and Argentina, both having fairly high contributors. On the other hand, countries like China, India, and the USA, have very low amounts of players playing in the top five leagues and contributing towards these numbers, which means that a large population does not correlate to simply having a higher playing level of soccer.</p>
     <h1>Progressive Passes Forward vs Goals Scored</h1>
     <div id="target-container">
