@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Performance in Europe's Top 5 Leagues</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="plots.js"></script>
 </head>
 <body>
     <header>
@@ -59,24 +61,30 @@
     <iframe src="plots/map.html" width="100%" height="800" style="border:none;"></iframe>
     <p>Presented above is a world map, with the color of each country decided by the sum of the players representing the country's combined Goals and Assists. The top four frontrunners are Spain, France, England, Germany, and Italy, in that order. Conveniently, those are the five countries that the top five leagues are in, suggesting that they have the highest playing field in the world. Some other noticeable countries are Brazil and Argentina, both having fairly high contributors. On the other hand, countries like China, India, and the USA, have very low amounts of players playing in the top five leagues and contributing towards these numbers, which means that a large population does not correlate to simply having a higher playing level of soccer.</p>
     <h1>Progressive Passes Forward vs Goals Scored</h1>
-    
+
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="plots.js"></script>
-    <p>This D3 Visualization demonstrates the relationship plotted on a scatter plot between Progressive Passes Forward and Goals grouped by team and colored by league. Progressive passes are defined as passes that move the ball upfield and into attacking positions. The idea of an increase in progressive passes also relies on the fact that defenders are heavily involved in attacking play, which is a style known as playing out the back which has gained a lot of popularity in recent years. This is a direct effect of defenders being able to score more and get into atacking positions. Progressive passes often come from defenders sending the ball into the final attacking third, leading to more goals. In the graph, a clear positive linear relationship is presented, meaning that teams that play more forward passes tend to score more goals. The data doesn't show much skewness, however, there are four premier league teams on the right skew of the graph, meaning that premeier league tend to use their defenders more in the build up play, which is actually true. 4 big clubs in the Premier League, Manchester City, Arsenal, Liverpool, and Manchester United all utilize this style of playing out the back, being very aggressive with their defenders up the pitch.</p>
-    <h1> Conclusions and Future Paths</h1>
-        <p> Through this analysis, we were able to conclude a couple things. A player's peak performance age range in the top 5 leagues is 20 to 30 years old
-            and players that are under the age of 20, and over the age of 30, seem to directly lead to less Goals + Assists. The Spanish La Liga and French Ligue 1
-            are on the extreme sides of both ends of the spectrums, and have the lowest median goals + assists.
-            The highest scoring position was FW (Forward), and leaders in many of the categories were from the Bundasliga. 
-            Defender's that were able to play freely, and move up the field led to more Goal + Assist Contributions.
-            Spain, France, and Germany had the highest Goals + Assists Contributions in the 2023 season in the top five leagues. And lastly,
-            the style of play in the Premier League, of progressive passes, led to the most Goals + Assists recorded. These conclusions can be
-            for a multitude of things, such as scouting players for youth academies, looking at players on the transfer market, and etc. It also supports the fact that modern
-            play style of soccer does lead to more goals and assists. In the future, it is key that we don't only look at 2023's data, as style of play and
-            competitiveness in leagues vary each year. For example, a flash of young talent in La Liga in the 2024 season might not make La Liga the oldest
-            median age league within the top 5 leagues. Things are drastically changing in the world and the world of Football, so these assumptions should 
-            not be held concrete whilst looking at one year of data.
-    </p>
-        
+    <script src="plots.js" defer></script>
+
+    <div id="target-container">
+    
+    </div>
+       
+    <div> 
+        <p>This D3 Visualization demonstrates the relationship plotted on a scatter plot between Progressive Passes Forward and Goals grouped by team and colored by league. Progressive passes are defined as passes that move the ball upfield and into attacking positions. The idea of an increase in progressive passes also relies on the fact that defenders are heavily involved in attacking play, which is a style known as playing out the back which has gained a lot of popularity in recent years. This is a direct effect of defenders being able to score more and get into atacking positions. Progressive passes often come from defenders sending the ball into the final attacking third, leading to more goals. In the graph, a clear positive linear relationship is presented, meaning that teams that play more forward passes tend to score more goals. The data doesn't show much skewness, however, there are four premier league teams on the right skew of the graph, meaning that premeier league tend to use their defenders more in the build up play, which is actually true. 4 big clubs in the Premier League, Manchester City, Arsenal, Liverpool, and Manchester United all utilize this style of playing out the back, being very aggressive with their defenders up the pitch.</p>
+            <h1> Conclusions and Future Paths</h1>
+                <p> Through this analysis, we were able to conclude a couple things. A player's peak performance age range in the top 5 leagues is 20 to 30 years old
+                    and players that are under the age of 20, and over the age of 30, seem to directly lead to less Goals + Assists. The Spanish La Liga and French Ligue 1
+                    are on the extreme sides of both ends of the spectrums, and have the lowest median goals + assists.
+                    The highest scoring position was FW (Forward), and leaders in many of the categories were from the Bundasliga. 
+                    Defender's that were able to play freely, and move up the field led to more Goal + Assist Contributions.
+                    Spain, France, and Germany had the highest Goals + Assists Contributions in the 2023 season in the top five leagues. And lastly,
+                    the style of play in the Premier League, of progressive passes, led to the most Goals + Assists recorded. These conclusions can be
+                    for a multitude of things, such as scouting players for youth academies, looking at players on the transfer market, and etc. It also supports the fact that modern
+                    play style of soccer does lead to more goals and assists. In the future, it is key that we don't only look at 2023's data, as style of play and
+                    competitiveness in leagues vary each year. For example, a flash of young talent in La Liga in the 2024 season might not make La Liga the oldest
+                    median age league within the top 5 leagues. Things are drastically changing in the world and the world of Football, so these assumptions should 
+                    not be held concrete whilst looking at one year of data.
+                </p>
+    </div>  
 </body>
 </html>
